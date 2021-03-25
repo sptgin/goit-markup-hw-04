@@ -189,6 +189,9 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--main-hero-background-color);
+  background-image: url(../images/webstudio-bgimage.jpg);
+  background-repeat: no-repeat;
+  background-position: top, center;
 }
 .hero-section-header {
   margin-top: 0;
