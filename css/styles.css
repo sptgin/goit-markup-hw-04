@@ -31,6 +31,8 @@
   --main-button-color: #2196f3;
   --main-button-hover-color: #188ce8;
   --main-button-text-color: #ffffff;
+  --main-icon-color: #afb1b8;
+  --main-icon-hover-color: #ffffff;
 
   --portfolio-default-background-color: #ffffff;
   --portfolio-project-list-background-color: #ffffff;
@@ -164,7 +166,8 @@ body {
 }
 
 .header-address-list-item-link {
-  display: block;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: var(--header-address-text-color);
   font-weight: 500;
@@ -179,6 +182,17 @@ body {
 .header-address-list-item-link:active,
 .header-address-list-item-link:focus {
   color: var(--header-address-hover-color);
+}
+
+.header-address-list-item-link:hover .address-icons,
+.header-address-list-item-link:active .address-icons,
+.header-address-list-item-link:focus .address-icons {
+  fill: var(--header-address-hover-color);
+}
+
+.address-icons {
+  fill: var(--main-icon-color);
+  margin-right: 10px;
 }
 
 /* Секция "Шапка" */
@@ -389,21 +403,40 @@ body {
   list-style: none;
   padding-left: 0;
   padding-right: 0;
-  margin-top: 0;
+  margin-top: 16px;
   margin-bottom: 0;
 }
 .team-section-social-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
   width: 44px;
   height: 44px;
+}
+
+.team-section-social-list-link:hover .social-icons,
+.team-section-social-list-link:active .social-icons,
+.team-section-social-list-link:focus .social-icons {
+  fill: var(--main-icon-hover-color);
+}
+
+.team-section-social-list-link:hover,
+.team-section-social-list-link:active,
+.team-section-social-list-link:focus {
+  background-color: var(--header-address-hover-color);
+}
+
+.team-section-social-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-icons {
   width: 20px;
   height: 20px;
+  fill: var(--main-icon-color);
 }
+
 /* Секция "Подвал" */
 .footer-section {
   width: auto;
