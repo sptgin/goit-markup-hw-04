@@ -120,7 +120,7 @@ body {
   margin-right: 50px;
 }
 .header-address-list-item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .logo-link {
@@ -435,6 +435,52 @@ body {
   width: 20px;
   height: 20px;
   fill: var(--main-icon-color);
+}
+
+.clients-section {
+  display: block;
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--main-default-background-color);
+}
+.clients-section-header {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: var(--main-team-header-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.clients-section-list {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.clients-section-list-item {
+  display: block;
+  height: 90px;
+  width: 170px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.clients-section-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-section-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
 }
 
 /* Секция "Подвал" */
