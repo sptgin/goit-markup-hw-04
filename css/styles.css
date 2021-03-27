@@ -26,6 +26,9 @@
   --main-team-name-color: #212121;
   --main-team-text-color: #757575;
 
+  --main-clients-icons-color: #afb1b8;
+  --main-clients-icons-hover-color: #2196f3;
+
   --main-default-background-color: #e5e5e5;
   --main-team-background-color: #f5f4fa;
   --main-button-color: #2196f3;
@@ -454,6 +457,11 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+.clients-icons {
+  fill: var(--main-clients-icons-color);
+}
+
 .clients-section-list {
   display: flex;
   list-style: none;
@@ -467,7 +475,7 @@ body {
   display: block;
   height: 90px;
   width: 170px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--main-clients-icons-color);
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -481,6 +489,18 @@ body {
   align-items: center;
   width: 170px;
   height: 90px;
+}
+
+.clients-section-list-link:hover .clients-icons,
+.clients-section-list-link:active .clients-icons,
+.clients-section-list-link:focus .clients-icons {
+  fill: var(--header-address-hover-color);
+}
+
+.clients-section-list-item:hover,
+.clients-section-list-item:active,
+.clients-section-list-item:focus {
+  border-color: var(--header-address-hover-color);
 }
 
 /* Секция "Подвал" */
