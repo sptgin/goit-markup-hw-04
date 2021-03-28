@@ -211,7 +211,13 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--main-hero-background-color);
-  background-image: url(../images/webstudio-bgimage.jpg);
+  background-image: linear-gradient(
+      to left,
+      rgba(47, 48, 58, 0.4),
+      100%,
+      transparent 100%
+    ),
+    url(../images/webstudio-bgimage.jpg);
   background-repeat: no-repeat;
   background-position: top left;
   background-size: cover;
@@ -742,6 +748,13 @@ body {
   color: var(--portfolio-project-list-text-color);
 }
 
-.portfolio-project-link:hover {
+.portfolio-project-link {
+  text-decoration: none;
+  display: block;
+}
+
+.portfolio-project-link:hover,
+.portfolio-project-link:focus,
+.portfolio-project-link:active {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
