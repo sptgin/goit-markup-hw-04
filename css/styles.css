@@ -32,7 +32,7 @@
   --main-clients-icons-color: #afb1b8;
   --main-clients-icons-hover-color: #2196f3;
 
-  --main-default-background-color: #e5e5e5;
+  --main-default-background-color: #ffffff;
   --main-team-background-color: #f5f4fa;
   --main-button-color: #2196f3;
   --main-button-hover-color: #188ce8;
@@ -542,6 +542,7 @@ body {
 
 .footer-section-data {
   display: flex;
+  align-items: baseline;
 }
 .footer-address-card {
   margin-right: 70px;
@@ -590,10 +591,8 @@ body {
 }
 
 .footer-section-social-card {
-  width: 206px;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 12px;
 }
 .footer-section-social-name {
   margin-top: 0;
